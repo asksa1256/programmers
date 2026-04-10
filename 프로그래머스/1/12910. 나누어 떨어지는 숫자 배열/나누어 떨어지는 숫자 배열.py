@@ -6,6 +6,4 @@ def solution(arr, divisor):
     # result.sort()
     # return result if len(result) > 0 else [-1]
     
-    result = sorted([x for x in arr if x % divisor == 0])
-    
-    return result if len(result) else [-1]
+    return sorted([x for x in arr if x % divisor == 0]) or [-1]
